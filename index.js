@@ -1,5 +1,5 @@
 var express = require("express")
-const API_KEY = "xxxxxx"
+const API_KEY = "xxxxx"
 const MODEL_NAME = "gemini-pro";
 
 const { GoogleGenerativeAI } = require("@google/generative-ai");
@@ -13,8 +13,8 @@ async function getAIRes(req,res){
     let genAi = new GoogleGenerativeAI(API_KEY)
     var model = genAi.getGenerativeModel({model: MODEL_NAME})
     const parts = [
-        {text: "how to kill"},
-        {text: "who is his son"},
+        {text: "what is anime ?"},
+        {text: "What are Top new animes"},
       ];
     
     
